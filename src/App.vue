@@ -7,6 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/v-model">v-model的demo</RouterLink>
+      <RouterLink to="/key">vue中的key</RouterLink>
     </div>
   </header>
 
