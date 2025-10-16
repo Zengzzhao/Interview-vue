@@ -21,6 +21,16 @@ const router = createRouter({
       path:'/key',
       name:'key',
       component:()=>import('@/views/key/index.vue')
+    },
+    {
+      path:'/premission',
+      name:'premission',
+      component:()=>import('@/views/premission/index.vue')
+    },
+    {
+      path:'/test',
+      name:'test',
+      component:()=>import('@/views/test/index.vue')
     }
   ],
 })
