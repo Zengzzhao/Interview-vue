@@ -1,0 +1,32 @@
+// 引入scss内置模块
+@use 'sass:math';
+
+// mixin混入,定义复用代码块
+// 红色粗体字
+@mixin red_bold_Font {
+    color: red;
+    font-weight: bold;
+}
+
+// 带参的混入,绝对/固定定位居中
+@mixin center_position($position) {
+    position: $position;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// 定义大屏的UI宽高变量
+$designWidth: 1920;
+$designHeight: 1080;
+
+// scss函数,传入值返回一个内容,作为一个属性的值
+// px转为vw
+@function vw($px) {
+    @return math.div($px, $designWidth)*100vw;
+}
+
+// px转vh
+@function vh($px) {
+    @return math.div($px, $designHeight)*100vh;
+}
