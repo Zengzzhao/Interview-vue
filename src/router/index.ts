@@ -18,19 +18,24 @@ const router = createRouter({
       component: () => import('../views/v-model/index.vue'),
     },
     {
-      path:'/key',
-      name:'key',
-      component:()=>import('@/views/key/index.vue')
+      path: '/key',
+      name: 'key',
+      component: () => import('@/views/key/index.vue')
     },
     {
-      path:'/premission',
-      name:'premission',
-      component:()=>import('@/views/premission/index.vue')
+      path: '/premission',
+      name: 'premission',
+      component: () => import('@/views/premission/index.vue')
     },
     {
-      path:'/test',
-      name:'test',
-      component:()=>import('@/views/test/index.vue')
+      path: '/scssPage',
+      name: 'scssPage',
+      component: () => import('@/views/scssPage/index.vue')
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/views/test/index.vue')
     }
   ],
 })

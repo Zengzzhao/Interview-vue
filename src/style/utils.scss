@@ -30,3 +30,10 @@ $designHeight: 1080;
 @function vh($px) {
     @return math.div($px, $designHeight)*100vh;
 }
+
+// 继承
+// 按钮的基础样式
+%btn-base{
+    border-radius: 4px;
+    padding: 10px 20px;
+}
