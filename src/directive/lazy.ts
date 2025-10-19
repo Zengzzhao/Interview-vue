@@ -1,4 +1,6 @@
 import defaultImg from '@/assets/default.png'
+import { onBeforeUnmount } from 'vue'
+
 // 交叉观察器
 const intersectionObserver = new IntersectionObserver((entries) => {
     for (const entry of entries) {
@@ -22,5 +24,8 @@ export const lazy = {
         el.src = defaultImg // 先将所有图片使用默认图片
         el.dataset.src = src // 将实际图片放入元素的data-src属性中
         intersectionObserver.observe(el) // 使用交叉观察器观察元素
+    },
+    onBeforeUnmount: () => {
+        intersectionObserver.disconnect()
     }
 }
