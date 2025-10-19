@@ -1,4 +1,5 @@
 <template>
+    <h1>使用交叉观察器实现图片懒加载</h1>
     <div class="container">
         <img src="@/assets/default.png" data-src="https://picsum.photos/200/300?random=1" alt="">
         <img src="@/assets/default.png" data-src="https://picsum.photos/200/300?random=2" alt="">

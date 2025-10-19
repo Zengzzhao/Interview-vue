@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/premission">前端权限控制</RouterLink>
       <RouterLink to="/scssPage">scss语法</RouterLink>
       <RouterLink to="/lazyLoadImg">图片懒加载</RouterLink>
+      <RouterLink to="/lazyLoadImgByDirective">自定义指令实现图片懒加载</RouterLink>
       <RouterLink to="/test">test</RouterLink>
     </div>
   </header>

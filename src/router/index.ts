@@ -38,6 +38,11 @@ const router = createRouter({
       component: () => import('@/views/lazyLoadImg/index.vue')
     },
     {
+      path: '/lazyLoadImgByDirective',
+      name: 'lazyLoadImgByDirective',
+      component: () => import('@/views/lazyLoadImgByDirective/index.vue')
+    },
+    {
       path: '/test',
       name: 'test',
       component: () => import('@/views/test/index.vue')

@@ -55,3 +55,32 @@
 
 
 ![PixPin_2025-09-27_18-00-30](README.assets/PixPin_2025-09-27_18-00-30.gif)
+
+# RABC组件按钮级控制
+
+使用自定义指令，将当前权限按钮名作为值传递给指令，将禁用等状态作为指令的参数传递给指令
+
+在自定义指令的mounted生命周期中获取到当前元素的对应的权限名、是否禁用，通过el元素实例进行相应操作
+
+```js
+const vPremission={
+    mounted:(el,binding){
+    	const {value,arg}=binding
+		const has=role.include(value)
+        if(arg==='disabled'){
+            el.disabled=has?false:true
+        }else{
+            has?'':el.parentNode&&el.parentNode.removeChild()
+        }
+	}
+}
+<button class="normal-btn" v-premission:disabled="'add'">新增用户</button>
+<button class="normal-btn" v-premission="'query'">查询用户</button>
+```
+
+
+
+# 图片懒加载
+
+通过自定义指令结合 IntersectionObserver 实现图片懒加载，提升页面性能，简化了代码逻辑，解决了传统滚动监听方式的缺陷
+
