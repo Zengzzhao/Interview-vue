@@ -29,8 +29,6 @@ const intersectionObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const img = entry.target as HTMLImageElement
             img.src = img.dataset.src || img.src
-            console.log(1111);
-            
             img.removeAttribute('data-src')
             intersectionObserver.unobserve(img) // 当前图片懒加载完成,让交叉观察器取消对当前img元素的观察
         }
