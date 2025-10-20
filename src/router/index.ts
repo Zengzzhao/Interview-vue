@@ -48,6 +48,11 @@ const router = createRouter({
       component: () => import('@/views/lazyLoadImgByScroll/index.vue')
     },
     {
+      path: '/dragAndAdsorb',
+      name: 'dragAndAdsorb',
+      component: () => import('@/views/dragAndAdsorb/index.vue')
+    },
+    {
       path: '/test',
       name: 'test',
       component: () => import('@/views/test/index.vue')
