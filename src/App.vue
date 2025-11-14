@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/lazyLoadImgByDirective">自定义指令实现图片懒加载</RouterLink>
       <RouterLink to="/lazyLoadImgByScroll">传统滚动监听方式实现图片懒加载</RouterLink>
       <RouterLink to="/dragAndAdsorb">拖拽与吸附</RouterLink>
+      <RouterLink to="/hooks">hooks</RouterLink>
       <RouterLink to="/test">test</RouterLink>
     </div>
   </header>
